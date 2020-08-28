@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./assests/download.png";
+import "./App.scss";
+import { Form, Button } from 'react-bootstrap';
+import {LoginForm } from './shared';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <div className="Root">
+          <div className="App">
+            <div className="RegisterModal">
+                <div className="details-box">
+                <img src={logo} />
+               <div className="heading">
+                 <h1>Join the largest art community in the world</h1>
+                <p>Explore and discover art, become a better artist, connect with others over mutual hobbies, or buy and sell work – you can do it all here.</p>
+              </div>
+               </div>
+          <div className="form-box">
+                   <LoginForm/>
+                </div>
+            </div>
+            </div>
+         </div>
   );
 }
 

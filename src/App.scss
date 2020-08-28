@@ -1,0 +1,139 @@
+$fontFamily : Verdana, Tahoma, "Trebuchet MS", "DejuVu Sans", "Bitstream Vera Sans", sans-serif;;
+.Root {
+  display: flex;
+}
+.Root .App {
+  text-align: center;
+  background-image: url("https://i.redd.it/8smdg1rxqeu21.jpg");
+  background-position: "center";
+  background-size: "contain";
+  overflow: auto;
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+}
+.RegisterModal {
+  height: 700px;
+  width: 700px;
+  background-color: red;
+  display: flex;
+  flex: initial;
+  flex-direction: row;
+}
+
+.details-box {
+  display: flex;
+  flex: 0.5;
+  flex-direction: column;
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dcb26fe4-c664-4272-af88-2876a5f00e02/dbkmg7o-2d38c21b-b9e2-43ff-bb9a-51e18982b2dc.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZGNiMjZmZTQtYzY2NC00MjcyLWFmODgtMjg3NmE1ZjAwZTAyXC9kYmttZzdvLTJkMzhjMjFiLWI5ZTItNDNmZi1iYjlhLTUxZTE4OTgyYjJkYy5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.l_4RC4VfQIjwns4gwDfwxivY-6YsN92PjoqBnLjJ_RM'); 
+  // background-image: url("https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350");
+  background-position: 'center';
+  background-size: 'contain'; 
+  img {
+    height: 100 px;
+    width: 120px;
+    align-self: flex-start;
+    margin-left: 22px;
+    margin-top: 20px;
+  };
+  .heading {
+    h1 {
+      color: white;
+      text-transform: uppercase;
+      line-height: 45px;
+      font-weight: 700;
+      margin-left: 30px;
+      margin-top: 30px;
+      width: 220px;
+      font-size: 2.5em;
+      text-align: left;
+      font-family: $fontFamily;
+    };
+    p {
+      color:white;
+      font-size: 0.8em;
+      width: 300px;
+      text-align: justify;
+      margin-left: 30px;
+      font-weight: 550;
+      line-height: 18px;
+      font-family: $fontFamily;
+    }
+  }
+}
+.form-box {
+  flex:0.5;
+  background-color: white;
+  display: flex;
+  padding-left: 15px;
+ 
+  div {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  div h1 {
+    align-self: flex-start;
+    color: black;
+    // margin-left: 20px;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 60px;
+  justify-content: space-around;
+  margin-top: 10px;
+  position: relative;
+  label {
+    // margin-left: 10px;
+    position: absolute;
+    opacity: 0.5;
+  }
+  input {
+    height: 30px;
+    border-width: 0;
+    width: 300px;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+  }
+}
+.form-group input:focus + label, .form-group input:invalid + label  {
+  font-size: 75%;
+  transform: translate3d(0, -180%, 0);
+  opacity: 0.5;
+  margin-left: -1px;
+}
+.form-group input:focus, .form-group input:invalid {
+    border-bottom-width: 2px;
+    border-bottom-color: greenyellow;
+    outline: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
