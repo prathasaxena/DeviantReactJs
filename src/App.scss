@@ -67,7 +67,17 @@ $fontFamily : Verdana, Tahoma, "Trebuchet MS", "DejuVu Sans", "Bitstream Vera Sa
   background-color: white;
   display: flex;
   padding-left: 15px;
- 
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    width:100px;
+    height: 50px;
+    margin-top: 28px;
+    background-image: linear-gradient(#69e5b4, #70f288);
+    border: 0px;
+  }
   div {
     display: flex;
     flex: 1;
@@ -79,6 +89,19 @@ $fontFamily : Verdana, Tahoma, "Trebuchet MS", "DejuVu Sans", "Bitstream Vera Sa
     color: black;
     // margin-left: 20px;
   }
+  div p{
+    margin-top: -12px;
+    font-size: 0.8em;
+    a {
+      color: blue;
+    }
+  }
+  Button: {
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(red, yellow);
+
+  }
 }
 
 .form-group {
@@ -87,12 +110,13 @@ $fontFamily : Verdana, Tahoma, "Trebuchet MS", "DejuVu Sans", "Bitstream Vera Sa
   align-items: flex-start;
   height: 60px;
   justify-content: space-around;
-  margin-top: 10px;
+  margin-top: 16px;
   position: relative;
   label {
     // margin-left: 10px;
     position: absolute;
     opacity: 0.5;
+
   }
   input {
     height: 30px;
@@ -100,8 +124,12 @@ $fontFamily : Verdana, Tahoma, "Trebuchet MS", "DejuVu Sans", "Bitstream Vera Sa
     width: 300px;
     border-bottom-width: 1px;
     border-bottom-color: black;
+    margin-top: 12px;
+   
   }
+
 }
+
 .form-group input:focus + label, .form-group input:invalid + label  {
   font-size: 75%;
   transform: translate3d(0, -180%, 0);
@@ -112,6 +140,29 @@ $fontFamily : Verdana, Tahoma, "Trebuchet MS", "DejuVu Sans", "Bitstream Vera Sa
     border-bottom-width: 2px;
     border-bottom-color: greenyellow;
     outline: none;
+}
+
+form .form-group-row {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-top: 12px;
+  align-items: center;
+  // justify-content: center;
+  label {
+    margin-left: 6px;
+    font-size: 1em;
+  }
+  input:after {
+    height: 20px;
+    width: 20px;
+    background-image: linear-gradient(#69e5b4, #70f288);
+  }
+  input:before {
+    height: 20px;
+    width: 20px;
+    background-image: linear-gradient(#69e5b4, #70f288);
+  }
 }
 
 .App-header {
